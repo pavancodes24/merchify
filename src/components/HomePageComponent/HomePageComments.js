@@ -7,7 +7,7 @@ const HomePageComments = () => {
   return (
     <Grid container justifyContent={"space-between"}>
       <Grid item>
-        <Grid container direction="column" justifyContent={"space-between"}>
+        <Grid container direction="column" alignItems={"stretch"}>
           <Grid item>
             <CommentCardsLeft name={"Leave a Comment"} value={1} />
           </Grid>
@@ -19,7 +19,7 @@ const HomePageComments = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item>
+      <Grid item alignItems={"stretch"}>
         <HomePageRight />
       </Grid>
     </Grid>
