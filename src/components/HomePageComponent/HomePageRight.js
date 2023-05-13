@@ -10,7 +10,7 @@ const HomePageRight = () => {
         direction={"column"}
         alignItems={"center"}
         justifyContent={"space-around"}
-        style={{ height: "13vh" }}
+        // style={{ height: "13vh" }}
       >
         <Grid item>
           <Typography variant="caption">
@@ -18,15 +18,15 @@ const HomePageRight = () => {
           </Typography>
         </Grid>
         <Grid item>
-          <div style={{ fontSize: "8px", fontWeight: 600 }}>
+          <div style={{ fontSize: "12px", fontWeight: 600 }}>
             people enrolled
           </div>
         </Grid>
         <Grid item>
-          <Rating style={{ fontSize: "13px" }} value={"3"} readOnly />
+          <Rating style={{ fontSize: "15px" }} value={"3"} readOnly />
         </Grid>
         <Grid item>
-          <div style={{ fontSize: "9px" }}>3 Ratings (5.0)</div>
+          <div style={{ fontSize: "12px" }}>3 Ratings (5.0)</div>
         </Grid>
       </Grid>
     </div>
