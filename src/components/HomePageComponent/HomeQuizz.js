@@ -5,7 +5,7 @@ import CommentCardsLeft from "./CommentCardsLeft";
 const HomeQuizz = () => {
   return (
     <div>
-      <Grid container direction="column">
+      <Grid container direction="column" spacing={2}>
         <Grid item>
           <Typography>This Quiz Includes</Typography>
         </Grid>
