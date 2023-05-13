@@ -11,7 +11,7 @@ const HomePage = () => {
       <Grid
         item
         sx={{
-          height: "40vh",
+          height: "35vh",
           background: `url(${backgroundImg})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
