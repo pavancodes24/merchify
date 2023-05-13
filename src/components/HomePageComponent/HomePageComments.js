@@ -11,7 +11,7 @@ const HomePageComments = () => {
           container
           direction="column"
           justifyContent={"space-between"}
-          style={{ height: "15vh" }}
+          style={{ height: "13vh" }}
         >
           <Grid item>
             <CommentCardsLeft name={"Leave a Comment"} value={1} />

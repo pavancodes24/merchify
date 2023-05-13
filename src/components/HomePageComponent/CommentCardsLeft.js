@@ -21,7 +21,7 @@ const CommentCardsLeft = ({ name, value }) => {
         </div>
       </Grid>
       <Grid item>
-        <div style={{ fontSize: "10px", fontWeight: "600" }}>{name}</div>
+        <div style={{ fontSize: "15px", fontWeight: "600" }}>{name}</div>
       </Grid>
     </Grid>
   );

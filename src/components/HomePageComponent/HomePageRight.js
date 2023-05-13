@@ -10,7 +10,7 @@ const HomePageRight = () => {
         direction={"column"}
         alignItems={"center"}
         justifyContent={"space-around"}
-        style={{ height: "15vh" }}
+        style={{ height: "13vh" }}
       >
         <Grid item>
           <Typography variant="caption">
