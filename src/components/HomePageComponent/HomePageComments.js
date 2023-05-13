@@ -7,12 +7,7 @@ const HomePageComments = () => {
   return (
     <Grid container justifyContent={"space-between"}>
       <Grid item>
-        <Grid
-          container
-          direction="column"
-          justifyContent={"space-between"}
-          style={{ height: "13vh" }}
-        >
+        <Grid container direction="column" justifyContent={"space-between"}>
           <Grid item>
             <CommentCardsLeft name={"Leave a Comment"} value={1} />
           </Grid>

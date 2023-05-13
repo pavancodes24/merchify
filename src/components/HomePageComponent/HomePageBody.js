@@ -16,7 +16,7 @@ const HomePageBody = () => {
             The Daily MS Excel Quiz
           </div>{" "}
         </Grid>
-        <Grid item>
+        <Grid item style={{ height: "14vh" }}>
           <HomePageComments />
         </Grid>
       </Grid>
