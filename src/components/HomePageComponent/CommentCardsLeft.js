@@ -14,6 +14,14 @@ const CommentCardsLeft = ({ name, value }) => {
                 ? "/winsave.png"
                 : value == "3"
                 ? "/courage.png"
+                : value == "4"
+                ? "/filestyle.png"
+                : value == "5"
+                ? "/questionicon.png"
+                : value == "6"
+                ? "/timeicon.png"
+                : value == "7"
+                ? "/multifile.png"
                 : ""
             }
             sx={{ width: "15px", height: "15px" }}
@@ -21,7 +29,9 @@ const CommentCardsLeft = ({ name, value }) => {
         </div>
       </Grid>
       <Grid item>
-        <Typography style={{ fontSize: "15px", fontWeight: "600" }}>{name}</Typography>
+        <Typography style={{ fontSize: "15px", fontWeight: "600" }}>
+          {name}
+        </Typography>
       </Grid>
     </Grid>
   );

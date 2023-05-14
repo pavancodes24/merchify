@@ -7,7 +7,9 @@ const HomeQuizz = () => {
     <div>
       <Grid container direction="column" spacing={1}>
         <Grid item>
-          <Typography>This Quiz Includes</Typography>
+          <Typography variant="h6" style={{ fontWeight: 900 }}>
+            This Quiz Includes
+          </Typography>
         </Grid>
         <Grid item>
           <CommentCardsLeft name={"50% Passing Percentage"} value={4} />
