@@ -21,7 +21,7 @@ const CommentCardsLeft = ({ name, value }) => {
                 : value == "6"
                 ? "/timeicon.png"
                 : value == "7"
-                ? "/multifile.png"
+                ? "/mutifile.png"
                 : ""
             }
             sx={{ width: "15px", height: "15px" }}
