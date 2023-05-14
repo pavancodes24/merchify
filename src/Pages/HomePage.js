@@ -47,7 +47,7 @@ const HomePage = () => {
       <Grid item sx={{ padding: "2% 8% 0% 4%" }}>
         <HomeQuizz />
       </Grid>
-
+      <br />
       <Divider />
       <Grid
         item
