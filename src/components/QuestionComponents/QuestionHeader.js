@@ -1,9 +1,15 @@
 import { Grid } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Chip from "@mui/material/Chip";
 const QuestionHeader = () => {
   const [count, setCount] = React.useState("01");
-  const [seconds, setSeconds] = React.useState(600);
+  const [seconds, setSeconds] = useState(
+    parseInt(localStorage.getItem("timerValue")) || 600
+  );
+
+  useEffect(() => {
+    localStorage.setItem("timerValue", seconds.toString());
+  }, [seconds]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,7 +21,6 @@ const QuestionHeader = () => {
     return () => clearInterval(interval);
   }, [seconds]);
 
-  
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
   return (
