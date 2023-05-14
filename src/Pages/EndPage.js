@@ -5,13 +5,13 @@ const EndPage = () => {
   return (
     <div>
       <Grid container direction={"column"}>
-        <Grid item sx={{ background: "#663595", height: "90vh" }}>
+        <Grid item sx={{ background: "#663595", height: "80vh" }}>
           <Grid
             container
             direction={"column"}
             alignItems={"center"}
             justifyContent={"space-around"}
-            sx={{ height: "90vh" }}
+            sx={{ height: "80vh" }}
           >
             <Grid item>
               <Grid
