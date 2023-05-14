@@ -10,6 +10,7 @@ import Skeleton from "@mui/material/Skeleton";
 import Typography from "@mui/material/Typography";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { Grid } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const drawerBleeding = 56;
 
@@ -39,6 +40,8 @@ function SwipeableEdgeDrawer(props) {
   console.log(props, "testing");
   const { window } = props;
 
+  const navigate = useNavigate();
+
   // This is used only for the example
   const container =
     window !== undefined ? () => window().document.body : undefined;
@@ -49,7 +52,7 @@ function SwipeableEdgeDrawer(props) {
       <Global
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
-            height: `calc(50% - ${drawerBleeding}px)`,
+            height: `calc(60% - ${drawerBleeding}px)`,
             overflow: "visible",
           },
         }}
@@ -202,7 +205,15 @@ function SwipeableEdgeDrawer(props) {
               </Grid>
             </Grid>
 
-            <Grid item>
+            <Grid
+              item
+              style={{
+                position: "fixed",
+                bottom: 15,
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
               <Grid
                 container
                 justifyContent={"center"}
@@ -213,6 +224,7 @@ function SwipeableEdgeDrawer(props) {
                   <Button
                     variant="contained"
                     sx={{ borderRadius: "20px", width: "120px" }}
+                    onClick={() => navigate("/questions-page")}
                   >
                     Start
                   </Button>
