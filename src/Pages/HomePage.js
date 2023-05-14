@@ -17,7 +17,22 @@ const HomePage = () => {
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
-      ></Grid>
+      >
+        <Grid
+          container
+          alignItems={"center"}
+          sx={{ height: "35vh", padding: "3%" }}
+        >
+          <Grid item>
+            <Typography
+              variant="h6"
+              style={{ fontWeight: 900, width: "200px" }}
+            >
+              The Daily Ms Excel Quiz
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
       <Grid item>
         <HomePageBody />
       </Grid>
