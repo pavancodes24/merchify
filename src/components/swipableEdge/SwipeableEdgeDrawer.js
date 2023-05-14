@@ -182,6 +182,7 @@ function SwipeableEdgeDrawer(props) {
                   background: "#663595",
                   padding: "10px",
                   borderRadius: "5px",
+                  color: "white",
                 }}
                 justifyContent={"center"}
                 alignItems={"center"}
