@@ -92,7 +92,7 @@ const EndPage = () => {
             variant="contained"
             style={{
               postion: "fixed",
-              bottom: 0,
+              bottom: -5,
               left: "50%",
               transform: "translateX(-50%)",
               textTransform: "unset",
