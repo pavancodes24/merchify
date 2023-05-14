@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import style from "../css/HomePage.module.css";
 import HomePageBody from "../components/HomePageComponent/HomePageBody";
 import backgroundImg from "../Assets/udemybackgroundimage.jpg";
-import { Typography } from "@mui/material";
+import { Button, Divider, Typography } from "@mui/material";
 import HomeQuizz from "../components/HomePageComponent/HomeQuizz";
 const HomePage = () => {
   return (
@@ -46,6 +46,20 @@ const HomePage = () => {
 
       <Grid item sx={{ padding: "2% 8% 0% 4%" }}>
         <HomeQuizz />
+      </Grid>
+
+      <Divider />
+      <Grid item style={{ position: "fixed", bottom: 10, left: "50%" }}>
+        <Button
+          variant="contained"
+          style={{
+            textTransform: "unset",
+            borderRadius: "20px",
+            backgroundColor: "red",
+          }}
+        >
+          Take quiz
+        </Button>
       </Grid>
     </Grid>
   );
