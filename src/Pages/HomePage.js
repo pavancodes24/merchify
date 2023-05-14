@@ -49,7 +49,15 @@ const HomePage = () => {
       </Grid>
 
       <Divider />
-      <Grid item style={{ position: "fixed", bottom: 10, left: "50%" }}>
+      <Grid
+        item
+        style={{
+          position: "fixed",
+          bottom: 10,
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
         <Button
           variant="contained"
           style={{
