@@ -1,8 +1,7 @@
 import { Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Chip from "@mui/material/Chip";
-const QuestionHeader = () => {
-  const [count, setCount] = React.useState("01");
+const QuestionHeader = ({ count, setCount }) => {
   const [seconds, setSeconds] = useState(
     parseInt(localStorage.getItem("timerValue")) || 600
   );
@@ -39,7 +38,7 @@ const QuestionHeader = () => {
         </Grid>
         <Grid item>
           <Chip
-            label={`${minutes}:${
+            label={`${minutes} : ${
               remainingSeconds < 10 ? "0" : ""
             }${remainingSeconds}`}
             sx={{
