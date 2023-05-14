@@ -193,7 +193,7 @@ function SwipeableEdgeDrawer(props) {
                       width: "20px",
                       height: "20px",
                       borderRadius: "10px",
-                      background: "red",
+                      background: "teal",
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
