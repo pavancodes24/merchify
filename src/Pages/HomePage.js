@@ -3,9 +3,15 @@ import Grid from "@mui/material/Grid";
 import style from "../css/HomePage.module.css";
 import HomePageBody from "../components/HomePageComponent/HomePageBody";
 import backgroundImg from "../Assets/udemybackgroundimage.jpg";
-import { Button, Divider, Typography } from "@mui/material";
+import { Button, Divider, SwipeableDrawer, Typography } from "@mui/material";
 import HomeQuizz from "../components/HomePageComponent/HomeQuizz";
+import SwipeableEdgeDrawer from "../components/swipableEdge/SwipeableEdgeDrawer";
 const HomePage = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
   return (
     <Grid container sx={{ height: "100vh" }} direction={"column"}>
       <Grid
@@ -59,6 +65,7 @@ const HomePage = () => {
         }}
       >
         <Button
+          onClick={() => setOpen(true)}
           variant="contained"
           style={{
             textTransform: "unset",
@@ -68,6 +75,7 @@ const HomePage = () => {
         >
           Take quiz
         </Button>
+        <SwipeableEdgeDrawer open={open} toggleDrawer={toggleDrawer} />
       </Grid>
     </Grid>
   );
